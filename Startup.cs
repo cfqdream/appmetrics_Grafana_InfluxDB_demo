@@ -82,7 +82,7 @@ namespace WebApplication1
             app.UseHttpsRedirection();
             app.UseStaticFiles();
             app.UseCookiePolicy();
-            loggerFactory.AddConsole(Configuration.GetSection(" Logging "));
+            loggerFactory.AddConsole(Configuration.GetSection("Logging"));
             app.UseMetrics();
             app.UseMetricsReporting(lifetime);
             app.UseMvc(routes =>
